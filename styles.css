@@ -1,10 +1,42 @@
-
-
 body{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+.icon-bar {
+    width: 50px; 
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: 1px solid rgb(156, 170, 156);
+    border-radius: 10px;
+}
+.icon-bar img {
+    display: block; 
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease;  
+}
+.icon-bar img:hover {
+  background-color: rgba(73, 160, 60, 0.461);
+  border-radius: 10px;
+}
+
+
+
+#content{
+    box-shadow: 10px 10px 10px rgb(156, 170, 156);
+    border: 1px solid rgb(156, 170, 156);
+    width: 960px;
+    margin-bottom: 100px;
+}
+
+
+
 
 .up{
     width: 100%;
@@ -24,12 +56,15 @@ body{
     margin-left: 30px;
     font-size: 11px;
 }
+.up a:hover{
+    color: rgb(117, 140, 105); 
+    text-decoration: underline;
+}
 .up .search{
     width: 20%;
     padding: 15px;
     float: right;
 }
-
 .up .search img{
     width: 20px;
     height: 20px;
@@ -41,43 +76,20 @@ body{
 .up .search img:hover{
     background-color: rgba(73, 160, 60, 0.461);
 }
-.icon-bar {
-    width: 50px; 
-    position: fixed;
-    top: 50%;
-    left: 0%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border: 1px solid rgb(156, 170, 156);
-    border-radius: 10px;
-}
-.icon-bar img {
-    display: block; 
-    width: 50px;
-    height: 50px;
-    transition: all 0.3s ease;  
-}
 
 
-.icon-bar img:hover {
-  background-color: rgba(73, 160, 60, 0.461);
-  border-radius: 10px;
-}
 
-
-#content{
-    box-shadow: 10px 10px 10px rgb(156, 170, 156);
-    border: 1px solid rgb(156, 170, 156);
-    width: 960px;
-    margin-bottom: 100px;
-}
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     clear: both;
 }
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3;
+    place-items: center;
+  }
 #logo_text1{
     width: 150px;
     text-align: center;
@@ -104,11 +116,15 @@ header{
     font-style: italic;
     color: rgb(72, 78, 70);
 }
-.logo {
-    display: grid;
-    grid-template-columns: 1fr 2fr 3;
-    place-items: center;
-  }
+
+
+
+.types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 90px;
+}
 .types img{
     width: 70px;
 } 
@@ -161,30 +177,23 @@ header{
     color: rgb(41, 153, 123);
     text-decoration: underline;
 }
-
-.types {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 90px;
-}
-
 #main_logo{
     width: 450px;
     grid-column: 2;
 }
 
+
+
+
 .slideshow-container {
     position: relative;
     margin: auto;
   }
-
-
-  .places{
-      padding: 20px;
-      height: 750px;
-      margin-bottom: 100px;
-      border: 1px solid rgb(156, 170, 156);
+.places{
+    padding: 20px;
+    height: 750px;
+    margin-bottom: 100px;
+    border: 1px solid rgb(156, 170, 156);
   }
   .places h3{
     font-size: 37px;
@@ -287,7 +296,6 @@ header{
     margin-top: 100px;
     margin-bottom: 100px;
   }
-
   .sides figure button{
       display: none;
       background-color: rgba(191, 224, 195, 0.265);
@@ -300,7 +308,6 @@ header{
       color: rgb(72, 78, 70);
       box-shadow:  5px 5px 5px rgb(156, 170, 156);
   }
-
   .sides div{
       float: left;
       width: 100%;
@@ -325,7 +332,6 @@ header{
  .sides figure:hover figcaption {
     display: none;
  }
- 
 .sides figure p{
     position: absolute;
     text-align: center;
@@ -343,6 +349,8 @@ header{
     height: 300px;
     margin: auto;
 }
+
+
 
 .questions img{
     width: 55px;
@@ -387,6 +395,8 @@ header{
     color: rgb(43, 120, 8);
 }
 
+
+
 .cont{
     width: 78%;
     margin: 50px auto 50px auto ;
@@ -404,7 +414,6 @@ header{
     padding-left: 70px;
     float: left;
 }
-
 .contact_form input{
     width: 100%;
     height: 20px;
@@ -413,21 +422,18 @@ header{
     border-right: none;
     border-bottom: 3px solid rgb(156, 170, 156);
 }
-
 .contact_form textarea{
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 3px solid rgb(156, 170, 156);
 }
-
 .contact_form p{
     width: 100%;
      font-size: 25px;
      font-weight: lighter;
      color: rgb(72, 78, 70);
 }
-
 .contacts h2{
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -436,14 +442,12 @@ header{
     text-align: center;
     text-shadow: 1px 1px 1px rgb(21, 47, 40);
 }
-
 .contacts p{
     text-align: center;
     font-size: 17px;
     font-style: italic;
     color: rgb(72, 78, 70);
 }
-
 .cont_name h2{
     font-size: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -454,12 +458,10 @@ header{
     margin-top: -20px;
     margin-bottom: 50px;
 }
-
 .cont_name p{
     font-size: 13px;
     margin-top: 50px;
 }
-
 .footer{
     width: 100%;
     padding-top: 200px;
